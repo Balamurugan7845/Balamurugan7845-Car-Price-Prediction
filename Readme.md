@@ -1,93 +1,114 @@
-# Car Price Prediction using Machine Learning
+# 🚗 Car Price Prediction using Machine Learning
 
-## Overview
-This project predicts the **selling price of used cars** using Machine Learning.  
-A **Linear Regression model** is trained on historical car data to estimate the selling price based on various features.
+## 📌 Overview
 
-The model analyzes attributes such as car age, present price, kilometers driven, fuel type, seller type, transmission, and number of previous owners.
+This project focuses on predicting the **selling price of used cars** using Machine Learning techniques. A **Linear Regression model** is trained on historical car data to estimate prices based on key features such as vehicle age, price, usage, and specifications.
 
 ---
 
-## Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Linear Regression  
-- Jupyter Notebook (Anaconda)
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Jupyter Notebook (Anaconda)
 
 ---
 
-## Dataset
-**Dataset used:** cardata.csv
+## 📊 Dataset
 
-Main features include:  
-- Year  
-- Present_Price  
-- Kms_Driven  
-- Fuel_Type  
-- Seller_Type  
-- Transmission  
-- Owner
+**Dataset:** `cardata.csv`
 
-**Target variable:** Selling_Price
+### Features:
 
----
+* `Year` – Manufacturing year of the car
+* `Present_Price` – Current ex-showroom price
+* `Kms_Driven` – Distance driven (in km)
+* `Fuel_Type` – Petrol/Diesel/CNG
+* `Seller_Type` – Dealer or Individual
+* `Transmission` – Manual or Automatic
+* `Owner` – Number of previous owners
 
-## Machine Learning Workflow
-1. Import required libraries  
-2. Load dataset  
-3. Data preprocessing  
-4. Feature encoding  
-5. Train-test split  
-6. Train Linear Regression model  
-7. Evaluate model using R² score  
-8. Build a predictive system
+### 🎯 Target:
+
+* `Selling_Price` – Price at which the car is sold
 
 ---
 
-## Model Used
-**Linear Regression**
+## 🔄 Machine Learning Workflow
 
-Linear Regression is used to predict **continuous values**, making it suitable for estimating car prices.
-
----
-
-## Model Evaluation
-Model performance is evaluated using **R² Score**.
-
-Example output:  
-Training Accuracy: ~0.88  
-Testing Accuracy: ~0.84
+1. Data Collection & Loading
+2. Data Preprocessing
+3. Feature Encoding (Categorical → Numerical)
+4. Train-Test Split
+5. Model Training using Linear Regression
+6. Model Evaluation (R² Score)
+7. Price Prediction System
 
 ---
 
-## Example Prediction
+## 📈 Model Details
 
-Input:  
-`(2011, 0.826, 6000, 0, 1, 0, 0)`
+**Algorithm Used:** Linear Regression
 
-Output:  
-Predicted Selling Price: 4.52
+Linear Regression is effective for predicting continuous values and helps establish a relationship between car features and selling price.
 
 ---
 
-## Project Structure
+## ✅ Model Performance
+
+* **Training Accuracy (R²):** ~0.88
+* **Testing Accuracy (R²):** ~0.84
+
+---
+
+## 🔍 Example Prediction
+
+**Input Features:**
 
 ```
+Year = 2011  
+Present_Price = 0.826  
+Kms_Driven = 6000  
+Fuel_Type = 0  
+Seller_Type = 1  
+Transmission = 0  
+Owner = 0  
+```
 
+**Predicted Output:**
+
+```
+Selling Price ≈ 4.52 Lakhs
+```
+
+---
+
+## 📁 Project Structure
+
+```
 Car-Price-Prediction/
 │
 ├── cardata.csv
 ├── car_price_prediction.ipynb
 ├── README.md
 └── requirements.txt
-
 ```
 
 ---
 
-## Author
-Balamurugan S  
-Computer Science Student  
-Interested in Machine Learning and Data Science
+## 🚀 Future Improvements
+
+* Use advanced models (Random Forest, XGBoost)
+* Hyperparameter tuning
+* Deploy as a web app using Flask/Streamlit
+* Add visualization dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Balamurugan S**
+Computer Science Student
+Interested in Machine Learning & Data Science
